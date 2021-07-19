@@ -21,5 +21,10 @@ def overview():
 
 @app.route('/privacy')
 def privacy():
-    return render_template("privacy.html")    
+    return render_template("privacy.html")
+
+@app.route('/BingSiteAuth.xml')
+def bingauth():
+    return render_template("BingSiteAuth.xml")    
+
 
