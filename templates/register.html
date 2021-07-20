@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
   <meta name="generator" content="Hugo 0.83.1">
-  <title>日本|マイクロソフト ID およびネットワーク アクセス エンジニアリング仮想顧客オンサイト登録</title>
+  <title>Microsoft Identity & Network Access Engineering イベント登録</title>
 
   <!-- Favicons -->
   <link href="static/favicon.png" rel="icon">
@@ -44,7 +44,7 @@
     <header class="mb-auto">
       <div>
         <img src="static/mslogo.png" width="200" height="200" class="img-fluid" align="left" />
-        <h3 class="float-md-start mb-0">アイデンティティ&ネットワークアクセスエンジニアリング</h3>
+        <h3 class="float-md-start mb-0">Identity & Network Access Engineering</h3>
         <nav class="nav nav-masthead justify-content-center float-md-end">
           <a class="nav-link active" aria-current="page" href="/">登録する</a>
           <a class="nav-link" href="overview">イベントの概要</a>
@@ -61,39 +61,38 @@
         <img src="static/aunz.png" class="img-fluid" />
         <p></p>
 
-        <h3>参加者登録</h3>
+        <h3>参加者の登録</h3>
         <p></p>
-        <p class="lead">2021 年 8 月 31 日から 9 月 3 日まで、マイクロソフト ID ジャパン 仮想顧客オンサイト イベントに参加していただき、ありがとうございます。
-          登録するには以下の質問に答えてください。
+        <p class="lead">2021 年 8 月 31 日 (8:00 - 12:00) に Microsoft Identity & Network Access Engineering が開催する日本のお客様向けのオンライン イベントに参加していただくため、以下の質問にお答えください。
           </p>
         <form method="post"
           action="https://idonsiteeventregistration.azurewebsites.net/api/GenericTrack">
           <div class="form-group">
-
             <br />
-            <input type="text" class="form-control" id="firstName" name="firstName" placeholder="ファーストネーム(日本語と英語)"
+            <input type="text" class="form-control" id="firstName" name="firstName" placeholder="名(日本語・英語)"
               required="required" />
           </div>
 
           <div class="form-group">
             <br />
-            <input type="text" class="form-control" id="lastName" name="lastName" placeholder="姓(日本語と英語)を"
+            <input type="text" class="form-control" id="lastName" name="lastName" placeholder="姓(日本語・英語)"
               required="required" />
           </div>
 
           <div class="form-group">
             <br />
             <input type="text" class="form-control" id="Organization" name="Organization"
-              placeholder="組織(日本語・英語)" required="required" />
+              placeholder="会社名(日本語・英語)" required="required" />
           </div>
 
           <div class="form-group">
             <br />
-            <input type="email" class="form-control" id="email" name="Email" placeholder="あなたのメールアドレス"
+            <input type="email" class="form-control" id="email" name="Email" placeholder="メール アドレス"
               required="required" />
             <p></p>
-            <p style="color:whitesmoke"><b>気を付け</b> : 電子メール アドレスはイベントの前後通信に使用され、イベントのMicrosoft Teamsのゲストとして追加されます。 <i>他の出席者はこのメールを見ることができます</i></p>
+            <p style="color:whitesmoke"><b>注意</b> : ご記入いただいたメールアドレスはイベント関連の情報の配信のため、またイベントの Microsoft Teams へのゲストとして追加されます。 <i>他の出席者がこのメールを見る可能性があります</i></p>
 
+            <!--
             <div class="form-group">
               <br />
               <input type="text" class="form-control" id="JobTitle" name="JobTitle" placeholder="あなたの役職"
@@ -130,11 +129,11 @@
                 placeholder="議題に対してどのようなトピックを提案するか、どのようなトピックが頭の上にありますか?"
                 required="required" maxlength="384"></textarea>
             </div>
-
+            -->
             <div class="form-group">
               <br />
               <textarea class="form-control" id="SpecialNeeds" name="SpecialNeeds" rows="4" cols="80"
-                placeholder="仮想イベントに参加するための特別なニーズがある場合は、お知らせください"></textarea>
+                placeholder="オンライン イベントに参加するための特別なニーズがある場合はお知らせください"></textarea>
             </div>
 
             <p></p>
@@ -160,7 +159,7 @@
 </div>
 
               <input type="checkbox" id="consent" name="consent" value="Agreed" onclick="terms_changed()" />
-              <label for="checkbox">このボックスにチェックを入れ、上記のイベントに登録し、指定したメールアドレスでイベント関連の通信を受信することに同意することを確認します。</label>
+              <label for="checkbox">このボックスをチェックすることで、本イベントに登録すること、指定したメールアドレスがイベント関連の通知のために利用されること、また他の参加者にそのメールアドレスが見える可能性があることを同意します。</label>
             </div>
             <br />
             <button type="submit" id="submit_button" class="btn btn-primary btn-block" disabled style="background-color:grey; border-color:grey; height:100x;width:300px;font-size: xx-large;">登録する</button>
