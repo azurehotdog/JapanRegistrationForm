@@ -8,7 +8,7 @@ def subscribe():
 
 @app.route('/')
 def comingsoon():
-    return render_template("comingsoon.html")
+    return render_template("register.html")
 
 
 @app.route('/success')
